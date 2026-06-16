@@ -1,9 +1,11 @@
-package com.sneha.model;
+package com.sneha.ecommerce_backend.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -28,8 +30,9 @@ public class Order {
     @Column(nullable = false)
     private String address;
 
-    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL)
-    private List<OrderItem> orderItems;
+    @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JsonIgnoreProperties("order")
+    private List<OrderItem> orderItems = new ArrayList<>();
 
     @Column(name = "created_at")
     private LocalDateTime createdAt = LocalDateTime.now();

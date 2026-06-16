@@ -1,7 +1,8 @@
-package com.sneha.controller;
+package com.sneha.ecommerce_backend.controller;
 
-import com.sneha.model.Product;
-import com.sneha.service.ProductService;
+import com.sneha.ecommerce_backend.model.Product;
+import com.sneha.ecommerce_backend.service.ProductService;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

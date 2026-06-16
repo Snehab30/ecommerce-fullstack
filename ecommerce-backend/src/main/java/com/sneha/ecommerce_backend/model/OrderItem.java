@@ -1,5 +1,6 @@
-package com.sneha.model;
+package com.sneha.ecommerce_backend.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.Data;
 import java.math.BigDecimal;
@@ -15,10 +16,12 @@ public class OrderItem {
 
     @ManyToOne
     @JoinColumn(name = "order_id", nullable = false)
+    @JsonIgnoreProperties("orderItems")
     private Order order;
 
     @ManyToOne
     @JoinColumn(name = "product_id", nullable = false)
+    @JsonIgnoreProperties("category")
     private Product product;
 
     @Column(nullable = false)

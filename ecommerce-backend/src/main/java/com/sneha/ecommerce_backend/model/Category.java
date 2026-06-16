@@ -1,4 +1,4 @@
-package com.sneha.model;
+package com.sneha.ecommerce_backend.model;
 
 import jakarta.persistence.*;
 import lombok.Data;

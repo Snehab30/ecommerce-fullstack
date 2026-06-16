@@ -1,7 +1,8 @@
-package com.sneha.service;
+package com.sneha.ecommerce_backend.service;
 
-import com.sneha.model.Product;
-import com.sneha.repository.ProductRepository;
+import com.sneha.ecommerce_backend.model.Product;
+import com.sneha.ecommerce_backend.repository.ProductRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
