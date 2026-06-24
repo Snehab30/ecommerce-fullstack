@@ -1,3 +1,45 @@
+# ShopEasy — Frontend
+
+This repository contains the frontend for the ShopEasy demo ecommerce application built with React.
+## Features
+
+- Product listing with search, category filters and sorting
+## Prerequisites
+
+- Node.js 18+ and npm
+## Quick start
+
+1. Clone the repo:
+2. Install dependencies:
+
+```bash
+3. Create a `.env` file (optional) to point the app to your backend API:
+
+```
+4. Start the development server:
+
+```bash
+Open http://localhost:3000 in your browser.
+
+## Building for production
+```bash
+
+```bash
+## Important implementation notes
+
+- API wrapper: see [src/services/api.js](src/services/api.js) — responses that return an outer `data` property are unwrapped automatically.
+## .gitignore recommendation
+
+Add a `.gitignore` with the following before committing:
+## Pushing to GitHub
+
+1. Create a new repo on GitHub.
+## Contributing
+
+Contributions are welcome. Open an issue or submit a pull request.
+## License
+
+This project is provided for demo and learning purposes — choose a license that fits your needs.
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
