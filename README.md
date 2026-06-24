@@ -2,8 +2,6 @@
 
 A full stack eCommerce application built with **Spring Boot** and **React.js**.
 
-> 🔗 Frontend: [Live Demo](#) &nbsp;|&nbsp; 🔗 Backend API: [Live Demo](#)
-
 ---
 
 ## 🧰 Tech Stack
@@ -77,8 +75,3 @@ ecommerce-fullstack/
 ```
 
 ---
-
-## 👩‍💻 Author
-
-**Sneha Balakrishnan** · Software Engineer  
-📧 bsneha2018new@gmail.com · [LinkedIn](https://linkedin.com/in/sneha-balakrishnan) · [GitHub](https://github.com/Snehab30)
